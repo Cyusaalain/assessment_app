@@ -11,7 +11,7 @@ db = SQLAlchemy(app)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'  # Redirect unauthorized users to login page
 
-from models import User, Module, Assessment, Question, AnswerOption, Result  # Import your models
+from assessment_app.models import User, Module, Assessment, Question, AnswerOption, Result
 
 # Register blueprints (to be created)
 from .routes import auth, admin, user
