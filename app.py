@@ -1,7 +1,7 @@
 from flask import Flask, render_template, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
-from config import Config
+from assessment_app.config import Config
 
 app = Flask(__name__)
 app.config.from_object(Config)
