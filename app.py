@@ -14,7 +14,7 @@ login_manager.login_view = 'login'  # Redirect unauthorized users to login page
 from models import User, Module, Assessment, Question, AnswerOption, Result  # Import your models
 
 # Register blueprints (to be created)
-from routes import auth, admin, user
+from .routes import auth, admin, user
 app.register_blueprint(auth)
 app.register_blueprint(admin)
 app.register_blueprint(user)
